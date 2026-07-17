@@ -34,6 +34,7 @@ def main_menu():
         #todo  e depois de 3 segundos feche o programa
 
         elif choice == "0":
+            screen_cleaner()
             print("Exiting...")
 
             break

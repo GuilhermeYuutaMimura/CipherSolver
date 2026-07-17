@@ -1,6 +1,6 @@
+from ciphers.kbcipher import kbcipher
 from ciphers.atbash import atbash
 from ciphers.caesar import caesar
-from ciphers.kbshift import kbshift
 from ciphers.morse import morse
 from ciphers.rail_fence import rail_fence
 from ciphers.vigenere import vigenere
@@ -16,7 +16,7 @@ def ciphers_menu():
 [1] Atbash Cipher
 [2] Caesar Cipher
 [3] Vigenere Cipher
-[4] Keyboard Shift Cipher
+[4] Keyboard Cipher
 [5] Morse Cipher
 [6] Rail Fence Cipher
 [7] Vigenere Cipher
@@ -36,7 +36,7 @@ def ciphers_menu():
             vigenere()
         
         elif choice == "4":
-            kbshift()
+            kbcipher()
 
         elif choice == "5":
             morse()
