@@ -5,6 +5,7 @@ def kbcipher():
     choice = None
     while True:
         screen_cleaner()
+        print("Keyboard Cipher")
         print("""
 [1] Decrypt
 [2] Encrypt
@@ -23,6 +24,7 @@ def kbcipher():
 
             print("")
             print("Decrypted text: " + text)
+            print()
 
         elif choice == "2":
             screen_cleaner()
@@ -35,6 +37,7 @@ def kbcipher():
 
             print("")
             print("Encrypted text: " + text)
+            print()
         
         elif choice == "0":
             screen_cleaner()
@@ -42,3 +45,5 @@ def kbcipher():
         else:
             screen_cleaner()
             break
+        print()
+        input("Press enter to continue")

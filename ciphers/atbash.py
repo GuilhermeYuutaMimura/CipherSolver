@@ -3,16 +3,17 @@ from util.screen_cleaner import screen_cleaner
 def atbash():
     screen_cleaner()
     translation_table = None
-    choise = None
+    choice = None
     while True:
+        print("Atbash Cipher")
         print("""
 [1] Decrypt
 [2] Encrypt
-[3] Go Back""")
+[0] Go Back""")
         
-        choise = input("Choose an option: ")
+        choice = input("Choose an option: ")
 
-        if choise == "1":
+        if choice == "1":
             screen_cleaner()
             text = input("Enter the text to decrypt: ")
 
@@ -27,8 +28,9 @@ def atbash():
 
             print("")
             print("Decrypted text: " + text)
+            print() 
         
-        elif choise == "2":
+        elif choice == "2":
             screen_cleaner()
             text = input("Enter the text to encrypt: ")
 
@@ -43,7 +45,12 @@ def atbash():
         
             print("")
             print("Encrypted text: " + text)
+            print()
 
-        else:
+        elif choice == 0:
             screen_cleaner()
             break
+        else:
+            print("Invalid choice")
+        print()
+        input("Press enter to continue")

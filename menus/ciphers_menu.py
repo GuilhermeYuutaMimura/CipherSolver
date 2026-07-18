@@ -15,12 +15,9 @@ def ciphers_menu():
         print("""
 [1] Atbash Cipher
 [2] Caesar Cipher
-[3] Vigenere Cipher
-[4] Keyboard Cipher
-[5] Morse Cipher
-[6] Rail Fence Cipher
-[7] Vigenere Cipher
-[8] Xor Cipher
+[3] Keyboard Cipher
+[4] Morse Cipher
+[5] Vigenere Cipher
 [0] Go Back""")
 
         print("")
@@ -33,22 +30,19 @@ def ciphers_menu():
             caesar()
         
         elif choice == "3":
-            vigenere()
-        
-        elif choice == "4":
             kbcipher()
 
-        elif choice == "5":
+        elif choice == "4":
             morse()
 
-        elif choice == "6":
-            rail_fence()
+        #elif choice == "5":
+            #rail_fence()
 
-        elif choice == "7":
+        elif choice == "5":
             vigenere()
 
-        elif choice == "8":
-            xor()
+        #elif choice == "8":
+            #xor()
         
         elif choice == "0":
             break

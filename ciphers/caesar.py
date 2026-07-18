@@ -5,8 +5,7 @@ def caesar():
     choice = None
     
     while True:
-
-
+        print("Caesar Cipher")
         print("""
 [1] Decrypt
 [2] Encrypt
@@ -63,6 +62,7 @@ def caesar():
                     else:
                         value = (value - key)
                     print(chr(value), end="")
+                    print()
 
                 elif char.isalpha() and char.islower():
                     value = ord(char)
@@ -76,6 +76,7 @@ def caesar():
 
                 else:
                     print(char, end="")
+                    print()
 
         elif choice == "0":
             screen_cleaner()
@@ -84,3 +85,5 @@ def caesar():
         else:
             screen_cleaner()
             print("Invalid choice")
+        print()
+        input("Press enter to continue")

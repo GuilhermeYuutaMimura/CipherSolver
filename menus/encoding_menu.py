@@ -1,5 +1,5 @@
 from encodes.ascii import ascii
-from encodes.base64 import base64
+from encodes.base64 import base64, base64_menu
 from encodes.binary import binary
 from encodes.hexadecimal import hexadecimal
 from encodes.rot13 import rot13
@@ -12,29 +12,31 @@ def encoding_menu():
         choice = None
 
         print("""
-[1] Base64
-[2] Binary
-[3] Hexadecimal
-[4] Rot13
-[5] URL Encoding
+[1] Ascii
+[2] Base64
+[3] Binary
+[4] Hexadecimal
+[5] Rot13
+[6] URL Encoding
 [0] Back""")
         print("")
         choice = input("Option: ")
-
         if choice == "1":
-            base64()
+            ascii()
 
-        elif choice == "2":
-            binary()
+        if choice == "2":
+            base64_menu()
 
         elif choice == "3":
-            hexadecimal()
+            binary()
 
         elif choice == "4":
-            from encodes.rot13 import rot13_menu
-            rot13_menu()
+            hexadecimal()
 
         elif choice == "5":
+            rot13()
+
+        elif choice == "6":
             url_encoding()
             
         elif choice == "0":
