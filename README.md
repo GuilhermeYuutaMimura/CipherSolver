@@ -6,23 +6,23 @@ The entire application is terminal-based, focusing on simplicity, efficiency, an
 
 ## Features
 ### Ciphers
-Atbash
-Caesar
-Keyboard
-Morse
-Vigenère
+- Atbash
+- Caesar
+- Keyboard
+- Morse
+- Vigenère
 ### Encodings
-ASCII
-Base64
-Binary
-Hexadecimal
-ROT13
-URL Encoding
+- ASCII
+- Base64
+- Binary
+- Hexadecimal
+-  ROT13
+- URL Encoding
 ### Hash Functions
-Blake2b
-MD5
-SHA-256
-SHA-512
+- Blake2b
+- MD5
+- SHA-256
+- SHA-512
 ## Installation
 
 CipherSolver requires no additional dependencies.
